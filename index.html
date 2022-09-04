@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html style="background-color: rgba(129,216,208, .6);">
+<head>
+    <meta charset="utf-8">
+    <title>Счётик дней до краба</title>
+    <style>
+        #i-1{
+            font-size: 100px;
+        }
+        p{
+            font-size: 80px;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<p style="margin: 40% 0 0 15%;">4 рота суворовцев</p>
+<p style="margin: 0 0 0 40%;" id="i-1" ></p>
+<p style="margin: 0 0 0 20%;">Дней до краба</p>
+<script>
+    let a = new Date("2023-06-23")
+    let b = new Date()
+    let d = Math.floor((a.getTime() - b.getTime()) / 86400000) + 1
+
+document.getElementById("i-1").innerHTML = d;
+</script>
+</body>
+</html>
