@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="margin: 0; background-size: 100vw 100vh; padding: 0;background-repeat: no-repeat; background-position: top center; background-attachment: fixed; background-image: url(https://drive.google.com/uc?export=view&id=1k9zmTq3kBdY0bjTwWQzAvXTHGQJC2g4-);">
+<html style="margin: 0; background-color: black;">
 <head>
     <meta charset="utf-8">
     <title>Счётик дней до краба</title>
@@ -13,14 +13,16 @@
         p{
             font-size: 70px;
             padding: 0;
+            z-index: 3;
         }
     </style>
 </head>
 <body>
-<p style="margin: 30% 0 0 15%;">4 рота суворовцев</p>
-<p style="margin: 0 0 0 40%;" id="i-1" ></p>
-<p style="margin: 0 0 0 20%;">Дней до краба</p>
-<p style="margin: 80% 0 0 0;"><center>"Один за всех и все за одного"</center></p>
+<img src="https://avatars.mds.yandex.net/i?id=f50fa57df46666ce98b3e5be57c57f83_l-5300128-images-thumbs&n=33&w=864&h=1080&q=60" style="z-index: 2; position: absolute; height: 80vh; width: 100vw; margin: 0;">
+<p style="margin: 5% 0 0 15%; position: absolute;">4 рота суворовцев</p>
+<p style="margin: 15% 0 0 40%; position: absolute;" id="i-1" ></p>
+<p style="margin: 25% 0 0 20%; position: absolute;">Дней до краба</p>
+<p style="margin: 150% 0 0 10%; position: absolute;">"Один за всех и все за одного"</p>
 <script>
     let a = new Date("2023-06-23")
     let b = new Date()
